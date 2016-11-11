@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FacBookDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bga-W2-JYv">
+                                <rect key="frame" x="86" y="318" width="202" height="30"/>
+                                <state key="normal" title="Log in with Custom Facebook"/>
+                                <connections>
+                                    <action selector="customLoginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eP6-Ph-zWR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IR2-LH-N1X">
+                                <rect key="frame" x="16" y="617" width="81" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.8553105103393277" blue="0.6517131309615124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="HU7-Fn-m1s"/>
+                                    <constraint firstAttribute="height" constant="30" id="Q71-64-SPR"/>
+                                </constraints>
+                                <state key="normal" title="getFBName"/>
+                                <connections>
+                                    <action selector="getFBNameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rut-AP-Msh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kr6-Ta-cpt">
+                                <rect key="frame" x="105" y="617" width="69" height="30"/>
+                                <color key="backgroundColor" red="0.77596230768319518" green="0.80571039079301521" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="iij-IZ-NVz"/>
+                                    <constraint firstAttribute="height" constant="30" id="lVq-uX-mOA"/>
+                                </constraints>
+                                <state key="normal" title="getFBMail"/>
+                                <connections>
+                                    <action selector="getFBMailAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRD-JA-3iu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2N-h8-GbS">
+                                <rect key="frame" x="182" y="617" width="54" height="30"/>
+                                <color key="backgroundColor" red="0.62813740596986389" green="1" blue="0.71140462285832706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="X2F-uh-KAt"/>
+                                    <constraint firstAttribute="width" constant="54" id="bnI-ge-LQo"/>
+                                </constraints>
+                                <state key="normal" title="getFBId"/>
+                                <connections>
+                                    <action selector="getFBIdAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sU0-I8-emv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHP-kQ-7cT">
+                                <rect key="frame" x="152" y="356" width="70" height="30"/>
+                                <state key="normal" title="FB Logout"/>
+                                <connections>
+                                    <action selector="customLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Yg-AT-ibJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IR2-LH-N1X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3ks-Jm-RKn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IR2-LH-N1X" secondAttribute="bottom" constant="20" id="954-jg-7zU"/>
+                            <constraint firstItem="Kr6-Ta-cpt" firstAttribute="leading" secondItem="IR2-LH-N1X" secondAttribute="trailing" constant="8" id="Crl-Qa-yp6"/>
+                            <constraint firstItem="yHP-kQ-7cT" firstAttribute="top" secondItem="bga-W2-JYv" secondAttribute="bottom" constant="8" id="MfG-hi-S3e"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kr6-Ta-cpt" secondAttribute="bottom" constant="20" id="TMn-QD-Bxe"/>
+                            <constraint firstItem="bga-W2-JYv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bUI-IO-R52"/>
+                            <constraint firstItem="bga-W2-JYv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="opT-nt-99b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b2N-h8-GbS" secondAttribute="bottom" constant="20" id="rU1-za-BVN"/>
+                            <constraint firstItem="b2N-h8-GbS" firstAttribute="leading" secondItem="Kr6-Ta-cpt" secondAttribute="trailing" constant="8" id="rWJ-qg-mdd"/>
+                            <constraint firstItem="yHP-kQ-7cT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xPc-0b-eSK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customLoginButton" destination="bga-W2-JYv" id="P6O-66-ilc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
