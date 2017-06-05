@@ -83,7 +83,7 @@ extension ViewController: LoginButtonDelegate {
     func joinChat() {
         if AccessToken.current != nil {
             let layout = UICollectionViewFlowLayout()
-//            let chatlog = ChatLogController(collectionViewLayout: layout)
+//   1         let chatlog = ChatLogController(collectionViewLayout: layout)
 //            navigationController?.pushViewController(chatlog, animated: true)
         }
     }
